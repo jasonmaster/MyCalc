@@ -71,18 +71,18 @@
         android:layout_height="wrap_content"
         android:text="="
         android:id="@+id/bttn_eq"
-        android:layout_below="@+id/bttn_plus"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/AuditTrail"
-        android:layout_alignEnd="@+id/AuditTrail" />
+        android:layout_toEndOf="@+id/bttn_clear"
+        android:layout_below="@+id/bttn_exp"
+        android:layout_toRightOf="@+id/bttn_clear"
+        android:layout_toLeftOf="@+id/bttn_close"
+        android:layout_toStartOf="@+id/bttn_close" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="C"
         android:id="@+id/bttn_clear"
-        android:layout_below="@+id/bttn_eq"
+        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -125,5 +125,24 @@
         android:layout_above="@+id/bttn_plus"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SQRT"
+        android:id="@+id/bttn_sq"
+        android:layout_toEndOf="@+id/bttn_divide"
+        android:layout_alignBottom="@+id/bttn_divide"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="^"
+        android:id="@+id/bttn_exp"
+        android:layout_below="@+id/bttn_plus"
+        android:layout_toLeftOf="@+id/bttn_eq"
+        android:layout_toStartOf="@+id/bttn_eq" />
 
 </RelativeLayout>
